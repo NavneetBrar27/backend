@@ -15,6 +15,12 @@ app.use((req, res, next) => {
   next();
 });
 
+// root route
+app.get('/', (req, res) => {
+  res.send('Hello, this is the backend for the auction app!');
+});
+
+
 // Enable CORS for all routes
 app.use(cors());
 
